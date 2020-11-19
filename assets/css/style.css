@@ -7,10 +7,18 @@
     font-family: 'Montserrat', sans-serif;;
     box-sizing: border-box;
     outline: 0;
+    border: none;
+    box-shadow: none;
 }
 
 h1{
     border-bottom: solid 1px #5040C0;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
 }
 
 body {
@@ -27,8 +35,8 @@ main {
 
 .container {
     position: relative;
-    max-width: 640px;
-    margin: 50px auto;
+    width: 90vw;
+    margin: 50px 10px 50px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +45,37 @@ main {
     text-align: left;
     background: var(--white);
     box-shadow: 2px 6px 17px 0px rgba(0,0,0,0.75);
+}
+
+.controls {
+    margin-bottom: 20px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls button {
+    margin-right: 20px;
+    width: 15%;
+    height: 50px;
+    font-size: 1em;
+    box-shadow:  0px 5px 4px 0px rgba(0,0,0,0.75);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--white);
+}
+
+@media screen and (max-width: 640px) {
+    .container button {
+        width: 25%;
+    }
+}
+
+.controls button:hover {
+    box-shadow: none;
 }
 
 .container p{
