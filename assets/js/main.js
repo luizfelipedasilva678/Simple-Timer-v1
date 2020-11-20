@@ -30,7 +30,7 @@
                 hours.innerHTML = addLeftZero(hour);
             }
 
-            if(hour === 24) {
+            if(hour === 23 && minute === 60 && seconds === 60) {
                 hour = 0;
                 second = 0;
                 minute = 0;
