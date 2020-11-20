@@ -69,8 +69,13 @@ main {
 }
 
 @media screen and (max-width: 640px) {
-    .container button {
-        width: 25%;
+    .controls {
+        flex-direction: column;
+    }
+    
+    .controls button {
+        width: 60%;
+        margin-bottom: 20px;
     }
 }
 
