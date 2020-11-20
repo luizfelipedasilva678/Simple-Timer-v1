@@ -60,7 +60,7 @@
             seconds.innerHTML = addLeftZero(0);
             minutes.innerHTML = addLeftZero(0);
             hours.innerHTML = addLeftZero(0);
-
+            document.querySelector('h2').style.color = "#000";
             Timer();
         });     
     }   
